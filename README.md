@@ -30,6 +30,12 @@ $npm install -D @playwright/test@latest
 $npx playwright install --with-deps
 ```
 
+Run
+```
+$npm run dev 
+$npm run test:e2e:playwright
+```
+
 ## Run Unit test
 ```
 $npm run test:unit

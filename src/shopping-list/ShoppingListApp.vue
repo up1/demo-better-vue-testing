@@ -57,6 +57,7 @@ let removeItem = async (itemId: number) => {
               class="flex-grow border border-teal-900 rounded p-2"
             />
             <button
+              id="add-button"
               class="add-button rounded px-4 py-3 bg-teal-600 hover:bg-teal-700 text-white transition-colors"
               @click.prevent="addItem"
             >
