@@ -76,32 +76,25 @@ function makeInteractions(
   return {
     check: async () => {
       let elements = toArray<HTMLElement>(await elementResolver());
-      // eslint-disable-next-line no-restricted-syntax
       for (let element of elements) {
-        // eslint-disable-next-line no-await-in-loop
         await user.click(element);
       }
     },
     click: async () => {
       let elements = toArray<HTMLElement>(await elementResolver());
-      // eslint-disable-next-line no-restricted-syntax
       for (let element of elements) {
-        // eslint-disable-next-line no-await-in-loop
         await user.click(element);
       }
     },
     focus: async () => {
       let elements = toArray<HTMLElement>(await elementResolver());
-      // eslint-disable-next-line no-restricted-syntax
       for (let element of elements) {
         element.focus();
       }
     },
     type: async (text) => {
       let elements = toArray<HTMLElement>(await elementResolver());
-      // eslint-disable-next-line no-restricted-syntax
       for (let element of elements) {
-        // eslint-disable-next-line no-await-in-loop
         await user.type(element, text);
       }
     },
