@@ -2,7 +2,7 @@ import { expect, test, render, screen, fireEvent } from "../__test__/utils";
 
 import ShoppingList from "./ShoppingList.vue";
 
-test(`it should emit an "remove" event when we click an item`, async () => {
+test(`Should emit an "remove" event when we click an item`, async () => {
   let { emitted } = render(ShoppingList, {
     props: {
       items: [
