@@ -140,9 +140,6 @@ const makeDriver = ({ page }: { page: Page }): Driver => ({
       return screenLocal.getByText(text);
     });
   },
-  get: function (selector: string): Assertions {
-    throw new Error("Function not implemented.");
-  },
 });
 
 function wrapItCallback(func: ItCallback) {

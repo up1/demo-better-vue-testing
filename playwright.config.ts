@@ -10,6 +10,11 @@ const config: PlaywrightTestConfig = {
       use: {
         ...devices['Desktop Chrome'],
         headless: false,
+        screenshot: 'on',
+        video: 'on',
+        launchOptions: {
+          args: ["--start-maximized"],
+        },
       },
     },
   ],
