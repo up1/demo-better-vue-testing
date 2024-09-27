@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "test:unit": "vitest run src/*",
     "test:e2e:playwright": "playwright test test/specs",
+    "test:e2e:vitest": "vitest run test/specs",
     "format": "prettier -w .",
     "format:check": "prettier --check ."
   },
