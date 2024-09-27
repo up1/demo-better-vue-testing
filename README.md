@@ -43,6 +43,7 @@ $npm run test:e2e:playwright
 ```
 
 ## Run e2e with Vitetest
+
 ```
 // Start server
 $npm run dev
