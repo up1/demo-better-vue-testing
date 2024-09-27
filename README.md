@@ -38,7 +38,7 @@ $npm run dev
 $npm run test:e2e:playwright
 ```
 
-## Run Unit test
+## Run Component test
 
 ```
 $npm run test:unit
