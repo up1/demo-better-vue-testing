@@ -1,4 +1,4 @@
-import { expect, Locator, Page, test as itPlaywright } from "@playwright/test";
+import { expect, Locator, Page, test as itPlaywright } from '@playwright/test';
 
 import type {
   Assertions,
@@ -6,7 +6,7 @@ import type {
   Driver,
   Interactions,
   ItCallback,
-} from "../types";
+} from '../types';
 
 type LocatorResolver = () => Locator;
 
@@ -50,7 +50,7 @@ function makeInteractions(elementResolver: LocatorResolver): Interactions {
 }
 
 function makeActions(
-  elementResolver: LocatorResolver
+  elementResolver: LocatorResolver,
 ): Assertions & Interactions {
   return {
     ...makeAssertions(elementResolver),
@@ -120,9 +120,9 @@ const makeDriver = ({ page }: { page: Page }): Driver => ({
               });
           httpVerb: `get` | `post` | `patch` | `delete`;
           status: number;
-        }
+        },
       ): void {
-        throw new Error("Function not implemented.");
+        throw new Error('Function not implemented.');
       },
     });
 

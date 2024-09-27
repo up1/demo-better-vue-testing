@@ -9,7 +9,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <ul class="space-y-2">
+  <ul class="space-y-2" data-testid="results">
     <li v-for="item in props.items" :key="item.id" class="item">
       <button
         class="rounded px-4 py-3 bg-teal-600 text-white text-left w-full transition-colors"

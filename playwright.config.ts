@@ -13,7 +13,7 @@ const config: PlaywrightTestConfig = {
         screenshot: 'on',
         video: 'on',
         launchOptions: {
-          args: ["--start-maximized"],
+          args: ['--start-maximized'],
         },
       },
     },
