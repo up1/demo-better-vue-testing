@@ -52,12 +52,14 @@ let removeItem = async (itemId: number) => {
           <div class="flex gap-2">
             <input
               id="title"
+              data-qa="title"
               v-model="itemNewTitle"
               name="title"
               class="flex-grow border border-teal-900 rounded p-2"
             />
             <button
               id="add-button"
+              data-qa="add-button"
               class="add-button rounded px-4 py-3 bg-teal-600 hover:bg-teal-700 text-white transition-colors"
               @click.prevent="addItem"
             >
