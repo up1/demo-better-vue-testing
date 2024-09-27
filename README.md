@@ -1,4 +1,8 @@
 # Demo with Better Testing with Vue app
+* Vue 3
+* Testing Library with Vue
+* Vitest
+* Playwright
 
 ## Create project with Vite
 
