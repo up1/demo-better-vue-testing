@@ -1,4 +1,5 @@
-import { test } from '../drivers/playwright/driver';
+// import { test } from '../drivers/playwright/driver';
+import { test } from '../../drivers/virtual/driver';
 
 test.skip('add item to list', async ({ driver }) => {
   await driver.goTo('/');

@@ -1,5 +1,6 @@
 # report
 test-results/
+test/drivers/virtual
 # Logs
 logs
 *.log

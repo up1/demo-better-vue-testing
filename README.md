@@ -34,8 +34,22 @@ $npx playwright install --with-deps
 Run
 
 ```
+// Start server
 $npm run dev
+
+// Run test
+$npm run pretest:e2e:playwright
 $npm run test:e2e:playwright
+```
+
+## Run e2e with Vitetest
+```
+// Start server
+$npm run dev
+
+// Run test
+$npm run pretest:e2e:vitest
+$npm run test:e2e:vitest
 ```
 
 ## Run Component test

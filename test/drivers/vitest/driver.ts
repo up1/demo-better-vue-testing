@@ -244,9 +244,11 @@ function wrapItCallback(func: ItCallback) {
   };
 }
 
-const it = (description: string, func: ItCallback) =>
+const test = (description: string, func: ItCallback) =>
   itVitest(description, wrapItCallback(func));
-it.only = (description: string, func: ItCallback) =>
+test.only = (description: string, func: ItCallback) =>
   itVitest.only(description, wrapItCallback(func));
+test.skip = (description: string, func: ItCallback) =>
+  itVitest.skip(description, wrapItCallback(func));
 
-export { it };
+export { test };

@@ -1,7 +1,8 @@
-import { test } from '../drivers/playwright/driver';
-import { Driver } from '../drivers/types';
+// import { test } from '../drivers/playwright/driver';
+import { test } from '../../drivers/virtual/driver';
+import { Driver } from '../../drivers/types';
 
-test.skip('add item to list', async ({ driver }) => {
+test('add item to list', async ({ driver }) => {
   const shoppingList = createShoppingList({ driver });
   await shoppingList.open();
   const newBeer = '2x4 DIPA Melvin';
