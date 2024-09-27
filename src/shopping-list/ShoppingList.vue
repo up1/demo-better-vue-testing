@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import { Item } from './repositories/shopping-repository';
 
 const props = defineProps<{

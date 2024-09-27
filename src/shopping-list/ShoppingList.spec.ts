@@ -1,6 +1,6 @@
-import { expect, test, render, screen, fireEvent } from "../__test__/utils";
+import { expect, test, render, screen, fireEvent } from '../__test__/utils';
 
-import ShoppingList from "./ShoppingList.vue";
+import ShoppingList from './ShoppingList.vue';
 
 test(`Should emit an "remove" event when we click an item`, async () => {
   let { emitted } = render(ShoppingList, {
@@ -17,6 +17,6 @@ test(`Should emit an "remove" event when we click an item`, async () => {
   });
   await fireEvent.click(removeItem);
 
-  const removeEvents = emitted().remove as unknown[][]; 
+  const removeEvents = emitted().remove as unknown[][];
   expect(removeEvents[0][0]).toBe('1'); // id of removed item
 });
