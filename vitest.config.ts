@@ -17,7 +17,6 @@ export default defineConfig({
       ],
       provider: `v8`,
       reporter: [`html`, `text`],
-
     },
     environment: `happy-dom`,
     setupFiles: [`./test/drivers/vitest/setup.ts`],

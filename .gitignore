@@ -1,6 +1,7 @@
 # report
 test-results/
 test/drivers/virtual
+coverage/
 # Logs
 logs
 *.log
